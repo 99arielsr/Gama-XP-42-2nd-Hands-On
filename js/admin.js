@@ -12,6 +12,7 @@ function createElementFromEvent(data) {
     const date = event.scheduled.substring(0, 10).replaceAll("-", "/");
     const time = event.scheduled.substring(11, 16);
     firstTdElement.innerText = date + " " + time;
+    firstTdElement.classList.add("firstTdElement");
 
     const secondTdElement = document.createElement("td");
     secondTdElement.innerText = event.name;

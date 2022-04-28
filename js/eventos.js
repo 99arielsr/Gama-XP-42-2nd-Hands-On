@@ -1,4 +1,5 @@
 const eventsContainerSelector = document.querySelector("#events-container");
+eventsContainerSelector.classList.add("align-items-stretch");
 
 function createElementFromEvent(data) {
   data.forEach((event, index) => {
@@ -7,6 +8,7 @@ function createElementFromEvent(data) {
     articleElement.classList.add("card");
     articleElement.classList.add("p-5");
     articleElement.classList.add("m-3");
+    articleElement.classList.add("justify-content-sm-between");
 
     const h2Element = document.createElement("h2");
     const eventName = event.name;
